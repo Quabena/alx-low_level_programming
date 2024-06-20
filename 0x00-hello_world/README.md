@@ -4,3 +4,4 @@
 3-name - Compiles a C file and creates an executable named cisfun
 4-puts - A C program that prints exactly "\"Programming is like building a multilingual puzzle
 5-printf - Is a C program that prints exactly 'with the proper grammar, but the outcome is a piece of art,'.
+6-size.c - Is a C program that prints the size of varios types on the computer it is compiled and run on.

@@ -5,3 +5,4 @@ s a C program that prints alphabets in lowercase, followed by a new line.
 3-print_alphabets.c - Is a C file that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
 4-print_alphabet - Is a C program that prints all the letters of the alphabets except q and e
 5-print_numbers.c - Is a C program that prints numbers from 0 - 9.
+6-print_numberz.c - Is a C program that prints numbers from 0 - 9 without using the char variable type

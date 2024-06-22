@@ -24,7 +24,7 @@ putchar(tens1);
 putchar(units1);
 putchar(' ');
 putchar(tens2);
-putchar(units2)
+putchar(units2);
 if (!(tens1 == 57 && units1 == 57 && tens2 == 57 && units2 == 57))
 {
 putchar(',');
@@ -36,7 +36,7 @@ tens2++;
 }
 units1++;
 }
-tens1++
+tens1++;
 }
 putchar('\n');
 return (0);

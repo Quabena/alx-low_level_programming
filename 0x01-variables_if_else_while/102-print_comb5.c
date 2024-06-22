@@ -8,24 +8,31 @@
 
 int main(void)
 {
-int tens1 = 48;
-while (tens1 <= 57)
+int tens1 = 0;
+int units1 = 0;
+
+while (tens1 <= 9)
 {
-int units1 = 48;
-while (units1 <= 57)
+units1 = 0;
+while (units1 <= 9)
 {
 int tens2 = tens1;
-while (tens2 <= 57)
+
+while (tens2 <= 9)
 {
 int units2 = units1 + 1;
-while (units2 <= 57)
+
+while (units2 <= 9)
 {
-putchar(tens1);
-putchar(units1);
+putchar(tens1 + '0');
+putchar(units1 + '0');
+
 putchar(' ');
-putchar(tens2);
-putchar(units2);
-if (!(tens1 == 57 && units1 == 57 && tens2 == 57 && units2 == 57))
+
+putchar(tens2 + '0');
+putchar(units2 + '0');
+
+if (!(tens1 == 9 && units 8 && tens2 == 9 && units2 == 9))
 {
 putchar(',');
 putchar(' ');
@@ -40,4 +47,5 @@ tens1++;
 }
 putchar('\n');
 return (0);
+
 }

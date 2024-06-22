@@ -7,3 +7,4 @@ s a C program that prints alphabets in lowercase, followed by a new line.
 5-print_numbers.c - Is a C program that prints numbers from 0 - 9.
 6-print_numberz.c - Is a C program that prints numbers from 0 - 9 without using the char variable type
 7-print_tebahpla.c - Is a C program that prints the lowercase alphabet in reverse
+8-print_base16.c - Is a C program that prints all the numbers of base 16 in lowercase.

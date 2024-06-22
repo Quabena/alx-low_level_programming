@@ -32,7 +32,7 @@ putchar(' ');
 putchar(tens2 + '0');
 putchar(units2 + '0');
 
-if (!(tens1 == 9 && units1 == 8 && tens2 == 9 && units2 == 9))
+if (!(tens1 == 9 && units1 == 9 && tens2 == 9 && units2 == 9))
 {
 putchar(',');
 putchar(' ');

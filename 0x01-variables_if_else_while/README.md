@@ -3,3 +3,4 @@
 2-print_alphabet.c - I
 s a C program that prints alphabets in lowercase, followed by a new line.
 3-print_alphabets.c - Is a C file that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
+4-print_alphabet - Is a C program that prints all the letters of the alphabets except q and e

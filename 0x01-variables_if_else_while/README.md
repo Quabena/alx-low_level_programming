@@ -11,3 +11,4 @@ s a C program that prints alphabets in lowercase, followed by a new line.
 9-print_comb.c - Is a C program that prints all possible combinations of single-digit numbers
 100-print_comb3.c - Is a C program that prints all possible different combinations of two digits in ascending order with two digits.
 101-print_comb4.c - Is a C program that prints all possible different combinations of three digits.
+102-print_comb5.c - Is a C program that prints all combinations of two-digit numbers.

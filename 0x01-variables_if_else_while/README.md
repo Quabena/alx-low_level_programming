@@ -2,3 +2,4 @@
 1-last_digit - Is a C program that assigns a random number to the variable n each time it is executed and prints the last digit of the number comparing it to 5, 0, and 6.
 2-print_alphabet.c - I
 s a C program that prints alphabets in lowercase, followed by a new line.
+3-print_alphabets.c - Is a C file that prints the alphabet in lowercase, and then in uppercase, followed by a new line.

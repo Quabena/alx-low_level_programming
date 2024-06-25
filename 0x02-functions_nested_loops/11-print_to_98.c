@@ -19,12 +19,11 @@ num = -num;
 }
 
 if (num / 10)
-{
 print_number(num / 10);
 
 _putchar((num % 10) + '0');
 }
-}
+
 /**
 * print_to_98 - Prints all natural numbers from n to 98
 * @n: The starting integer

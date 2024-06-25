@@ -5,3 +5,4 @@
 4-isalpha.c - Is a C program that checks for alphabetic character
 5-sign.c - Is a C program that prints the sign of a number
 6-abs.c - Is a C program that computes the absolute value of an integer
+7-print_last_digit.c - Is a C program that prints the last digit of a number

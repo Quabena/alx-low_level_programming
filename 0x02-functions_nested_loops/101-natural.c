@@ -1,0 +1,45 @@
+#include "main.h"
+
+/**
+* print_number - Prints an integer _putchar
+* @n: The integer to be printed
+*
+* Description: Handles the printing of negative numbers
+*/
+
+void print_number(int n)
+{
+unsigned int num = n;
+
+if (n < 0)
+{
+_putchar('-');
+num = -num;
+}
+
+if (num / 10)
+print_number(num / 10);
+
+_putchar((num % 10) + '0');
+}
+
+/**
+* multiple_natural_numbers - Computes and prints the sum of all the
+* multiples of 3 or 5 below 1024
+*/
+
+void multiple_natural_numbers(void)
+{
+int sum = 0;
+int i;
+
+for (i = 0; i < 1024; i++)
+{
+if (i % 3 == 0 || i % 5 == 0)
+{
+sum += i;
+}
+}
+print_number(sum);
+_putchar('\n');
+}

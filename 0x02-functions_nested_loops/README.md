@@ -14,3 +14,4 @@
 101-natural.c - List all natural numbers below 10 that are multiples of 3, 5, 6, and 9.
 102-fibonacci.c - Is a C program that prints fibonacci numbers
 103-fibonacci.c - Is a C program that prints even numbers in fibonacci numbers
+104-fibonacci.c - Is a C program that prints the first 98 Fibonacci numbers, starting with 1 and 2, followed by a new line.

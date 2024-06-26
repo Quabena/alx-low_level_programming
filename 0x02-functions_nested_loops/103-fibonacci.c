@@ -5,6 +5,8 @@
 *
 * Description: Prints the sum of Even Fibonnaci numbers
 * less than 4000000
+*
+* Return: Always 0 (Success)
 */
 
 int main(void)

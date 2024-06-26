@@ -29,7 +29,7 @@ printf(", %ld", p);
 }
 i++;
 }
-printf('\n');
+printf("\n");
 
 return (0);
 }

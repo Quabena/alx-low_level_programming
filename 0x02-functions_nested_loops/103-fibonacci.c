@@ -4,7 +4,7 @@
 * main - Entry point
 *
 * Description: Prints the sum of Even Fibonnaci numbers
-* less than 4000000 
+* less than 4000000
 */
 
 int main(void)

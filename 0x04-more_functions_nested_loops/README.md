@@ -9,3 +9,4 @@
 7-print_diagonal.c - Is a C function that prints a diagonal line in the terminal
 8-print_square.c - Is a C function that prints a square in the terminal with (#)
 9-fizz_buzz.c - Is a C program that prints numbers from 1 to 100...FizzBuzz
+10-print_triangle.c - Is a C program that prints a triangle

@@ -5,3 +5,4 @@
 3-print_numbers.c - Is a C function that prints the numbers from 0  to 9
 4-print_most_numbers - Is a C function that prints numbers from 0  to 9 without 2 and 4
 5-more_numbers - Is a C function that prints 10 times the numbers. from 0  to 14
+6-print_line.c - Is a C function that prints a straight line in the terminal

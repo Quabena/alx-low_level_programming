@@ -10,3 +10,4 @@
 7-puts_half.c - Is a C function that prints half of a string
 8-print_array.c - Is a C function that prints n elements of an array of integers
 9-strcpy.c - Is a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest
+100-atoi.c - Is a C function that convert a string to an integer

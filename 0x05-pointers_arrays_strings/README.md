@@ -6,3 +6,4 @@
 3-puts.c - Is a C function that prints a string to stdout
 4-print_rev.c - Is a C function that prints a string in reverse
 5-rev_string.c - Is a C function that reverses a string
+6-puts2.c - Is a C function that prints every other character of a string with the starting character.

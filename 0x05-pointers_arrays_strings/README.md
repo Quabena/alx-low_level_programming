@@ -2,3 +2,4 @@
 0-reset_to_98.c - Is a C function that updates the value of the integer it points to, to 98.
 1-swap.c - Is a C function that swaps the values of two integers
 2-strlen.c - Is a C function that returns the length of a string
+3-puts.c - Is a C function that prints a string to stdout

@@ -8,27 +8,24 @@
  */
 char *rot13(char *str)
 {
-char *ptr = str;
-int i;
+int i, j;
 
-while (*ptr != '\0')
-{
+char data1[] =
+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-for (i = 0; i < 26; i++)
+char datarot[] =
+"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+for (i = 0; str[i] != '\0'; i++)
 {
-if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z'))
+for (j = 0; j < 52; j++)
 {
-if ((*ptr >= 'a' && *ptr <= 'm') || (*ptr >= 'A' && *ptr <= 'M'))
+if (str[i] == data1[j])
 {
-*ptr = *ptr + 13;
-}
-else
-{
-*ptr = *ptr - 13;
+str[i] = datarot[j];
+break;
 }
 }
-}
-ptr++;
 }
 
 return (str);

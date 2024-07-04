@@ -8,3 +8,4 @@
 6-cap_string.c - Is a C function that capitilizes the first letter of each word in a string.
 7-leet.c - Is a C function that encodes a string into 1337.
 100-rot13 - Is a C function that encodes a string using rot13.
+101-print_numbers - Is a C function that prints an integer.

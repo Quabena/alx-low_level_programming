@@ -4,3 +4,4 @@
 2-scrncpy.c - Is a C function that copies a string
 3-strcmp.c - Is a C function that compares two strings.
 4-rev_array - Is a C function that reverses the content of an array of integers.
+5-string_toupper.c - Is a C function that Converts all lowercase letters of a string to uppercase.

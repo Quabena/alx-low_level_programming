@@ -3,3 +3,4 @@
 1-memcpy.c -Is a C function that copies memory area.
 2-strchr.c - Is a C function that locates a character in a string.
 3-strspn - Is a C function that gets the length of a prefix substring.
+4-strpbrk.c - I a C function that searches a string for any of a set of bytes.

@@ -5,3 +5,4 @@
 3-strspn - Is a C function that gets the length of a prefix substring.
 4-strpbrk.c - I a C function that searches a string for any of a set of bytes.
 5-strstr.c - Is a C function that locates a substring.
+7-print_chessboard.c - Is a C function that prints the chessboard

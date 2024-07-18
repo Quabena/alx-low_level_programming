@@ -41,6 +41,7 @@ return (NULL);
 }
 
 size_to_copy = (new_size < old_size) ? new_size : old_size;
+
 for (i = 0; i < size_to_copy; i++)
 {
 new_ptr[i] = ((char *)ptr)[i];

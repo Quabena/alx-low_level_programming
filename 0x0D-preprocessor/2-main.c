@@ -1,17 +1,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/**
-* _putchar - the prototype function
-* @c: character to print
-* Return: the printed name
-*/
-
+/* Prototype for _putchar */
 int _putchar(char c);
 
 /**
-* main - Entry point
-* Return: Always 0 Success
+* main - Entry point of the program
+* Return: Always 0 (Success)
 */
 
 int main(void)
@@ -31,9 +26,10 @@ return (EXIT_SUCCESS);
 }
 
 /**
-* _putchar - function to print the name
-* @c: the character to print
-* Return: the printed name
+* _putchar - Writes a character to stdout
+* @c: The character to print
+* Return: On success 1.
+* On error, -1 is returned.
 */
 
 int _putchar(char c)

@@ -1,0 +1,36 @@
+#include "variadic_functions.h"
+
+/**
+* print_number - Prints a number using _putchar.
+* @num: The number to print.
+*/
+
+void print_number(int num)
+{
+char buffer[10];
+int len = 0;
+int j;
+
+if (num == 0)
+{
+_putchar('0');
+return;
+}
+
+if (num < 0)
+{
+_putchar('-');
+num = -num;
+}
+
+while (num > 0)
+{
+buffer[len++] = '0' + (num % 10);
+num /= 10;
+}
+
+for (j = len - 1; j >= 0; j--)
+{
+_putchar(buffer[j]);
+}
+}

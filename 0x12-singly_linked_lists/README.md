@@ -7,3 +7,4 @@ Author - Evans Adu
 2-add_node.c - Is a C function that adds a new node at the beginning of a list_t list.
 3-add_node_end.c - Is a C function that adds a new node at the end of a list_t list.
 4-free_list.c - Is a C  function that frees a list_t list.
+100-first.c - Is a C function that prints a message before the main function is executed.

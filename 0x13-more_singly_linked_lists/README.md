@@ -16,3 +16,4 @@ Author: Evans Adu
 100-reverse_listint.c is a C function that reverses a listint_t linked list.
 101-print_listint_safe.c is a C function that prints a listint_t linked list.
 102-free_listint_safe.c is a C function that frees a listint_t list.
+103-find_loop.c is a C function that finds the loop in a linked list.

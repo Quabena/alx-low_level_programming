@@ -1,0 +1,26 @@
+#include "lists.h"
+
+/**
+* get_nodeint_at_index - A function that returns the nth node
+* of a list (listint_t)
+* @head: A pointer to the head of the list
+* @index: Node index, starting at 0.
+* Return: Pointer to the nth node, or NULL if the
+* node does not exist
+*/
+
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+unsigned int current_index = 0;
+listint_t *current_node = head;
+
+while (current_node != NULL)
+{
+if (current_index == index)
+return (current_node);
+
+current_index++;
+current_node = current_node->next;
+}
+return (NULL);
+}

@@ -12,14 +12,11 @@ size_t count = 0;
 const listint_t *nodes[MAX_NODES];
 size_t i;
 
-if (head == NULL)
-{
-exit(98);
-}
 for (i = 0; i < MAX_NODES; i++)
 {
 nodes[i] = NULL;
 }
+
 while (head != NULL)
 {
 for (i = 0; i < MAX_NODES; i++)
@@ -43,6 +40,7 @@ if (i == MAX_NODES)
 {
 exit(98);
 }
+
 head = head->next;
 count++;
 }

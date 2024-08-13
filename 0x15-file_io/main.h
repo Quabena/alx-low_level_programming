@@ -21,10 +21,15 @@ char *allocate_buffer(char *file_name);
 void close_descriptor(int fd);
 void handle_open_error(int fd, char *file_name, int error_code, char *error_msg);
 void handle_write_error(ssize_t bytes_wrtn, ssize_t bytes_rd, char *file_name);
-void check_elf_header(unsigned char *e_ident);
-void display_elf_info(Elf64_Ehdr *header);
-void read_elf_header(const char *file, Elf64_Ehdr **header);
-void handle_file_open(const char *file);
-void close_file(int fd);
+void verify_elf_header(unsigned char *e_ident);
+void show_magic_numbers(unsigned char *e_ident);
+void show_class_type(unsigned char *e_ident);
+void show_data_encoding(unsigned char *e_ident);
+void show_version_info(unsigned char *e_ident);
+void show_osabi_info(unsigned char *e_ident);
+void show_abi_version(unsigned char *e_ident);
+void show_file_type(unsigned int e_type, unsigned char *e_ident);
+void show_entry_point(unsigned long int e_entry, unsigned char *e_ident);
+void close_file_descriptor(int fd);
 
 #endif

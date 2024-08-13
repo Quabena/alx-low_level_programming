@@ -1,4 +1,21 @@
-#include "main.h"
+#include <elf.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void verify_elf_header(unsigned char *e_ident);
+void show_magic_numbers(unsigned char *e_ident);
+void show_class_type(unsigned char *e_ident);
+void show_data_encoding(unsigned char *e_ident);
+void show_version_info(unsigned char *e_ident);
+void show_osabi_info(unsigned char *e_ident);
+void show_abi_version(unsigned char *e_ident);
+void show_file_type(unsigned int e_type, unsigned char *e_ident);
+void show_entry_point(unsigned long int e_entry, unsigned char *e_ident);
+void close_file_descriptor(int fd);
 
 /**
  * verify_elf_header - Verifies if the file is an ELF file.

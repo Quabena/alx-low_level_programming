@@ -19,7 +19,8 @@ int _putchar(char c);
 size_t _strlen(const char *s);
 char *allocate_buffer(char *file_name);
 void close_descriptor(int fd);
-void handle_open_error(int fd, char *file_name, int error_code, char *error_msg);
+void handle_open_error(int fd, char *file_name, int error_code,
+		       char *error_msg);
 void handle_write_error(ssize_t bytes_wrtn, ssize_t bytes_rd, char *file_name);
 
 void validate_elf(unsigned char *identifier);

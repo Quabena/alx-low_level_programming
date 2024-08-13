@@ -56,7 +56,8 @@ void print_class_type(unsigned char *identifier)
 }
 
 /**
- * print_data_encoding - Prints the data encoding of the ELF file (little or big endian)
+ * print_data_encoding - Prints the data encoding of the ELF
+ * file (little or big endian)
  * @identifier: A pointer to an array containing the ELF data encoding
  */
 void print_data_encoding(unsigned char *identifier)
@@ -152,7 +153,8 @@ void print_abi_version(unsigned char *identifier)
 }
 
 /**
- * print_file_type - Prints the type of the ELF file (executable, relocatable, etc.)
+ * print_file_type - Prints the type of the ELF file
+ * (executable, relocatable, etc.)
  * @file_type: The ELF file type
  */
 void print_file_type(uint16_t file_type)
@@ -238,7 +240,8 @@ int main(int argc, char *argv[])
 	if (bytes_read == -1 || (size_t)bytes_read < sizeof(Elf64_Ehdr))
 	{
 		close_elf_file(elf_file_descriptor);
-		dprintf(STDERR_FILENO, "Error: Can't read ELF header from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO,
+			"Error: Can't read ELF header from file %s\n", argv[1]);
 		exit(98);
 	}
 

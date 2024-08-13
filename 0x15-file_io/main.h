@@ -22,15 +22,15 @@ void close_descriptor(int fd);
 void handle_open_error(int fd, char *file_name, int error_code, char *error_msg);
 void handle_write_error(ssize_t bytes_wrtn, ssize_t bytes_rd, char *file_name);
 
-void verify_elf_signature(unsigned char *e_ident);
-void display_magic(unsigned char *e_ident);
-void display_class(unsigned char *e_ident);
-void display_data_encoding(unsigned char *e_ident);
-void display_version(unsigned char *e_ident);
-void display_osabi(unsigned char *e_ident);
-void display_abi_version(unsigned char *e_ident);
-void display_type(unsigned int e_type, unsigned char *e_ident);
-void display_entry_point(unsigned long int e_entry, unsigned char *e_ident);
-void close_elf_file(int elf_fd);
+void validate_elf(unsigned char *identifier);
+void print_magic_bytes(unsigned char *identifier);
+void print_class_type(unsigned char *identifier);
+void print_data_encoding(unsigned char *identifier);
+void print_version_info(unsigned char *identifier);
+void print_osabi_info(unsigned char *identifier);
+void print_abi_version(unsigned char *identifier);
+void print_file_type(uint16_t file_type);
+void print_entry_address(uint64_t entry_address, unsigned char *identifier);
+void close_elf_file(int elf_file_descriptor);
 
 #endif

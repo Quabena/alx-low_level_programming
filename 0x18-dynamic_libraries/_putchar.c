@@ -1,23 +1,14 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
+* _putchar - A function that prints a character
+* @c: the character to print
 * Description: A program that prints "_putchar"
 *
-* Return: Always 0 (Success)
+* Return: The character printed
 */
-int main(void)
-{
-char str[] = "_putchar";
-int i = 0;
 
-while (str[i] != '\0')
+int _putchar(char c)
 {
-_putchar(str[i]);
-i++;
-}
-_putchar('\n');
-
-return (0);
+	return (write(1, &c, 1));
 }

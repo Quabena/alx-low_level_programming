@@ -1,0 +1,37 @@
+# 4-Makefile
+
+# Define the compiler, source files, and other variables
+CC = gcc
+SRC = main.c school.c
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Generate the object files from the source files
+OBJ = $(SRC:.c=.o)
+
+# Default rule to build the executable
+all: $(NAME)
+
+# Rule to link object files and create the executable
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) $(CFLAGS) -o $(NAME)
+
+# Rule to generate object files from source files
+%.o: %.c
+	$(CC) -c $< $(CFLAGS) -o $@
+
+# Clean rule: removes temporary files and the executable
+clean:
+	$(RM) $(NAME) *~ .#* #*.bak
+
+# Object clean rule: removes the object files
+oclean:
+	$(RM) $(OBJ)
+
+# Force clean rule: removes everything (object files, executable, and temporary files)
+fclean: clean oclean
+
+# Rebuild rule: forces recompilation of all source files
+re: fclean all
+

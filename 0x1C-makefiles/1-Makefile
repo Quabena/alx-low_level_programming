@@ -1,0 +1,10 @@
+# 1-Makefile
+
+# Define the compiler and the source files
+CC = gcc
+SRC = main.c school.c
+
+# The 'all' rule builds the executable 'school'
+all:
+	$(CC) $(SRC) -o school
+

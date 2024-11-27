@@ -55,7 +55,7 @@ def island_perimeter(grid):
     # Iterate through each cell in the grid
     for i in range(len(grid)):
         for j in range(len(grid[i])):
-            if grid[i][j] == 1:  # If the current cell is land
+            if grid[i][j]:
                 # Add the number of exposed sides of this land cell to the perimeter
                 perimeter += num_water_neighbors(grid, i, j)
 

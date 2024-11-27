@@ -1,19 +1,39 @@
+# Compiler to use
 CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
-NAME = school
-CFLAGS = -Wall -Werror -Wextra -pedantic
-.PHONY : all clean oclean fclean re
 
-all : m.h $(OBJ)
+# Source files
+SRC = main.c school.c
+
+# Object files (converted from source files)
+OBJ = $(SRC:.c=.o)
+
+# Name of the executable
+NAME = school
+
+# Compiler flags for strict compilation
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Declare non-file targets to avoid conflicts with file names
+.PHONY: all clean oclean fclean re
+
+# The 'all' rule is the default rule that builds the executable
+all: m.h $(OBJ)
+	# Link the object files to create the executable
 	$(CC) $(OBJ) -o $(NAME)
 
-clean :
+# The 'clean' rule removes Emacs and Vim temporary files, as well as the executable
+clean:
+	# Remove Emacs/Vim temporary files (*~) and the executable
 	$(RM) *~ $(NAME)
 
-oclean :
+# The 'oclean' rule removes the object files
+oclean:
+	# Remove object files (.o)
 	$(RM) $(OBJ)
 
-fclean : clean oclean
+# The 'fclean' rule calls 'clean' and 'oclean' to remove all temporary files and compiled files
+fclean: clean oclean
 
-re : oclean all
+# The 're' rule forces recompilation by removing object files and rebuilding everything
+re: oclean all
+

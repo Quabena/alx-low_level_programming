@@ -1,0 +1,31 @@
+# Define the name of the executable and other variables
+NAME = school
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+CFLAGS = -Wall -Werror -Wextra -pedantic
+RM = rm -f
+
+# The 'all' rule builds the executable, ensuring only updated source files are recompiled
+all: $(NAME)
+
+# Rule to create the executable
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
+
+# Rule to delete Emacs and Vim temporary files and the executable
+clean:
+	$(RM) *.swp *.swo $(NAME)
+
+# Rule to delete object files
+oclean:
+	$(RM) $(OBJ)
+
+# Rule to delete all (including temporary files, object files, and executable)
+fclean: clean oclean
+
+# Rule to force recompilation of all source files
+re: fclean all
+
+# Prevent compilation if m.h is missing
+$(SRC): m.h

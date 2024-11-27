@@ -5,14 +5,6 @@ def num_water_neighbors(grid, i, j):
     """
     Helper function that calculates the number of water neighbors 
     (or exposed sides) for a land cell in the grid.
-    
-    Parameters:
-    grid (list of list of ints): The grid representing the map, where 1 is land and 0 is water.
-    i (int): The row index of the current cell.
-    j (int): The column index of the current cell.
-    
-    Returns:
-    int: The number of exposed sides (water neighbors) of the land cell.
     """
     
     num = 0
@@ -41,13 +33,7 @@ def island_perimeter(grid):
     
     The perimeter is calculated by summing the number of exposed water sides 
     for each land cell in the grid. A land cell is considered to have an exposed 
-    side if it is adjacent to water or is on the grid boundary.
-    
-    Parameters:
-    grid (list of list of ints): The grid representing the map, where 1 is land and 0 is water.
-    
-    Returns:
-    int: The perimeter of the island (total number of exposed sides).
+    side if it is adjacent to water or is on the grid boundary
     """
     
     perimeter = 0
